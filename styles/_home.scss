@@ -1,0 +1,85 @@
+//VARIABLES
+//COLORS
+$color1: #3d3d3d;
+$color2: #F2922E;
+$color3: #E0E0E0;
+
+//FONTS
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+$font-1:'Archivo Black', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&display=swap');
+$font-2: 'Archivo', sans-serif;
+//STYLES
+
+//GLOBAL
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $color1;
+    min-width: 500px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+#main{
+    width: 100%;
+    padding: 0 10% 0 10%;
+    min-height: 864px;
+}
+
+#presentacion{    
+    width: 100%;    
+    min-height: 740px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;    
+    .presentacion{
+        width: 80%;        
+        min-height: 550px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;        
+        h1{
+            font-family: $font-1;
+            text-transform: uppercase;
+            color: $color3;
+            font-size: 5em;
+            line-height: 1;
+            padding-bottom: 150px;
+        }
+    }
+}
+
+#banner_obras{
+    width: 100%;
+    min-height: 120px;
+    background-color: $color2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 100px;
+    .obras_link{        
+        height: 100px;        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            font-family: $font-1;
+            color: $color1;
+            text-transform: uppercase;
+            font-size: 3em;
+            transition: .6s;
+            &:hover{
+                color: $color3;
+            }
+        }
+    }
+}

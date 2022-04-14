@@ -1,0 +1,151 @@
+//VARIABLES
+//COLORS
+$color1: #3d3d3d;
+$color2: #F2922E;
+$color3: #E0E0E0;
+$color4: black;
+
+//FONTS
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+$font-1:'Archivo Black', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&display=swap');
+$font-2: 'Archivo', sans-serif;
+//STYLES
+
+//GLOBAL
+
+#obras{
+    width: 100%;
+    padding: 0 10% 0 10%;
+    min-height: 864px;
+    .titulo{
+        height: 220px;
+        display: flex;
+        align-items: flex-end;
+        h1{
+            font-family: $font-1;
+            color: $color3;
+            font-size: 3em;
+            line-height: 1;
+            text-decoration: underline;
+        }
+    }
+    p{
+        font-family: $font-2;
+        color: $color3;
+        margin-bottom: 20px;
+        padding-top: 10px;
+    }
+    .selector_obras{
+        height: 500px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .obra_1{
+            // border-radius: 10px;
+            height: 500px;
+            width: 49%;
+            background-image: url(assets/img1.jpeg);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            transition: .3s;
+            &:hover{
+                border-radius: 30px;
+            }
+            .obra_1_link{
+                height: 100px;
+                background-color: $color1;
+                opacity: 0.8;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                padding-left: 10px;
+                transition: 0.6s;
+                &:hover{
+                    opacity: 1;
+                    background-color: $color3;
+                    border-radius: 0 0 30px 30px;
+                }
+                h1{
+                    color: $color2;
+                    font-family: $font-1;
+                    font-size: 3em;
+                    line-height: 1;
+                }
+                a{
+                    text-decoration: none;
+                    h2{
+                        color: $color2;
+                        font-family: $font-2;
+                        line-height: 1;
+                        transition: .6s;
+                        &:hover{
+                            color: $color1;
+                        }
+                    }
+                }
+                h3{
+                    color: $color2;
+                    font-family: $font-2;
+                    line-height: 1;                    
+                }
+            }
+        }
+        .obra_2{
+            border-radius: 10px;
+            height: 500px;
+            width: 49%;
+            background-image: url(assets/img2.jpeg);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            transition: 0.3s;
+            &:hover{
+                border-radius: 30px;
+            }
+            .obra_2_link{
+                height: 100px;
+                background-color: $color1;
+                opacity: 0.8;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                padding-left: 10px;
+                transition: 0.6s;
+                &:hover{
+                    opacity: 1;
+                    background-color: $color3;
+                    border-radius: 0 0 30px 30px;
+                }
+                h1{
+                    color: $color2;
+                    font-family: $font-1;
+                    font-size: 3em;
+                    line-height: 1;
+                }
+                a{                
+                    text-decoration: none;
+                    h2{
+                        color: $color2;
+                        font-family: $font-2;
+                        line-height: 1;
+                        transition: .6s;
+                        &:hover{
+                            color: $color1;
+                        }
+                    }
+                }
+                h3{
+                    color: $color2;
+                    font-family: $font-2;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+}   
