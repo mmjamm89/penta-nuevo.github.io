@@ -24,6 +24,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap");
 #nav_container {
   width: 80%;
   left: 50%;
@@ -46,7 +51,6 @@
 
 #nav_container #navbar {
   border-radius: 10px;
-  background-color: #E0E0E0;
   width: 500px;
   height: 50px;
   top: 0;
@@ -88,10 +92,11 @@
 }
 
 #nav_container #navbar ul li a {
+  text-transform: uppercase;
   position: relative;
   margin: 0 50px;
   text-decoration: none;
-  color: #3d3d3d;
+  color: #E0E0E0;
   font-family: "Source Code Pro", monospace;
   font-weight: 700;
   -webkit-transition: .6s;
@@ -696,6 +701,185 @@ body::-webkit-scrollbar {
 }
 
 #sense #info_obra .info_2 p {
+  font-family: "Source Code Pro", monospace;
+  color: #E0E0E0;
+  font-size: 1.1em;
+}
+
+#garzon {
+  width: 100%;
+  padding: 0 10% 0 10%;
+  min-height: 864px;
+}
+
+#garzon .titulo {
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#garzon .titulo h1 {
+  font-family: "Bebas Neue", cursive;
+  color: #E0E0E0;
+  font-size: 3em;
+  line-height: 1;
+}
+
+#garzon #slider_container {
+  width: 100%;
+  height: 300px;
+  border: 2px solid white;
+  margin-top: 10px;
+}
+
+#garzon #panel_info {
+  width: 100%;
+  height: 120px;
+  border: 2px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#garzon #panel_info .panel_1 {
+  height: 100%;
+  width: 25%;
+  background-color: #E0E0E0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Work Sans", sans-serif;
+  color: #3d3d3d;
+  padding-left: 10px;
+}
+
+#garzon #panel_info .panel_1 h1 {
+  font-size: 2em;
+}
+
+#garzon #panel_info .panel_2 {
+  height: 100%;
+  width: 25%;
+  background-color: #3d3d3d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Work Sans", sans-serif;
+  color: #E0E0E0;
+  padding-left: 10px;
+}
+
+#garzon #panel_info .panel_2 h1 {
+  font-size: 2em;
+}
+
+#garzon #panel_info .panel_2 h4 {
+  font-weight: 200;
+}
+
+#garzon #panel_info .panel_3 {
+  height: 100%;
+  width: 25%;
+  background-color: #E0E0E0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Work Sans", sans-serif;
+  color: #3d3d3d;
+  padding-left: 10px;
+}
+
+#garzon #panel_info .panel_3 h1 {
+  font-size: 2em;
+}
+
+#garzon #panel_info .panel_4 {
+  height: 100%;
+  width: 25%;
+  background-color: #3d3d3d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Work Sans", sans-serif;
+  color: #E0E0E0;
+  padding-left: 10px;
+}
+
+#garzon #panel_info .panel_4 h1 {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+#garzon #panel_info .panel_4 h4 {
+  font-weight: 200;
+}
+
+#garzon #info_obra {
+  height: 200px;
+  width: 100%;
+}
+
+#garzon #info_obra .info_1 {
+  width: 100%;
+  padding: 10px;
+}
+
+#garzon #info_obra .info_1 p {
+  font-family: "Source Code Pro", monospace;
+  color: #E0E0E0;
+  font-size: 1.1em;
+}
+
+#garzon #info_obra .info_2 {
+  width: 100%;
+  padding: 10px;
+}
+
+#garzon #info_obra .info_2 p {
   font-family: "Source Code Pro", monospace;
   color: #E0E0E0;
   font-size: 1.1em;

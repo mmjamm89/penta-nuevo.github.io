@@ -1,0 +1,144 @@
+//VARIABLES
+//COLORS
+$color1: #3d3d3d;
+$color2: #F2922E;
+$color3: #E0E0E0;
+$color4: black;
+
+//FONTS
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+$font-1:'Archivo Black', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&display=swap');
+$font-2: 'Archivo', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+$font-3: 'Bebas Neue', cursive;
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300&display=swap');
+$font-4: 'Work Sans', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+$font-5: 'Source Code Pro', monospace;
+//STYLES
+
+//GLOBAL
+
+#garzon{
+    width: 100%;
+    padding: 0 10% 0 10%;
+    min-height: 864px;
+    .titulo{
+        height: 220px;
+        display: flex;
+        align-items: flex-end;
+        h1{
+            font-family: $font-3;
+            color: $color3;
+            font-size: 3em;
+            line-height: 1;
+        }
+    }
+    #slider_container{
+        width: 100%;
+        height: 300px;
+        border: 2px solid white;
+        margin-top: 10px;
+    }
+    #panel_info{
+        width: 100%;
+        height: 120px;
+        border: 2px solid white;
+        display: flex;
+        .panel_1{
+            height: 100%;
+            width: 25%;
+            background-color: $color3;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            font-family: $font-4;
+            color: $color1;
+            padding-left: 10px;
+            h1{
+                font-size: 2em;
+            }
+        }
+        .panel_2{
+            height: 100%;
+            width: 25%;
+            background-color: $color1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            font-family: $font-4;
+            color: $color3;
+            padding-left: 10px;
+            h1{
+                font-size: 2em;
+            }
+            h4{
+                font-weight: 200;
+            }
+        }
+        .panel_3{
+            height: 100%;
+            width: 25%;
+            background-color: $color3;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            font-family: $font-4;
+            color: $color1;
+            padding-left: 10px;
+            h1{
+                font-size: 2em;
+            }
+            
+        }
+        .panel_4{
+            height: 100%;
+            width: 25%;
+            background-color: $color1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            font-family: $font-4;
+            color: $color3;
+            padding-left: 10px;
+            h1{
+                font-size: 2em;
+                font-weight: 300;
+            }
+            h4{
+                font-weight: 200;
+            }
+        }
+    }
+    #info_obra{
+        height: 200px;
+        width: 100%;
+        .info_1{            
+            width: 100%;
+            padding: 10px;
+            p{
+                font-family: $font-5;
+                color: $color3;
+                font-size: 1.1em;                
+            }
+        }
+        .info_2{            
+            width: 100%;
+            padding: 10px;            
+            p{
+                font-family: $font-5;
+                color: $color3;
+                font-size: 1.1em;
+            }
+        }
+    }
+}
