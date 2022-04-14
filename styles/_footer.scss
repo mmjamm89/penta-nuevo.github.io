@@ -11,6 +11,14 @@ $font-1:'Archivo Black', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&display=swap');
 $font-2: 'Archivo', sans-serif;
 
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300&display=swap');
+$font-3: 'Work Sans', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+$font-4: 'Bebas Neue', cursive;
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+$font-5: 'Source Code Pro', monospace;
 
 //STYLES
 
@@ -22,7 +30,7 @@ $font-2: 'Archivo', sans-serif;
     width: 100vw;
     height: 70px;
     p{
-        font-family: $font-2;
+        font-family: $font-5;
         color: $color3;
         font-size: 0.9em;
     }

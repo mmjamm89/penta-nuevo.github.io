@@ -11,6 +11,15 @@ $font-1:'Archivo Black', sans-serif;
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&display=swap');
 $font-2: 'Archivo', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+$font-3: 'Bebas Neue', cursive;
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300&display=swap');
+$font-4: 'Work Sans', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+$font-5: 'Source Code Pro', monospace;
 //STYLES
 
 //GLOBAL
@@ -24,11 +33,10 @@ $font-2: 'Archivo', sans-serif;
         display: flex;
         align-items: flex-end;
         h1{
-            font-family: $font-1;
+            font-family: $font-3;
             color: $color3;
             font-size: 3em;
             line-height: 1;
-            text-decoration: underline;
         }
     }
     #slider_container{
@@ -50,7 +58,7 @@ $font-2: 'Archivo', sans-serif;
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
-            font-family: $font-2;
+            font-family: $font-4;
             color: $color1;
             padding-left: 10px;
             h1{
@@ -65,11 +73,14 @@ $font-2: 'Archivo', sans-serif;
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
-            font-family: $font-2;
+            font-family: $font-4;
             color: $color3;
             padding-left: 10px;
             h1{
                 font-size: 2em;
+            }
+            h4{
+                font-weight: 200;
             }
         }
         .panel_3{
@@ -80,12 +91,13 @@ $font-2: 'Archivo', sans-serif;
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
-            font-family: $font-2;
+            font-family: $font-4;
             color: $color1;
             padding-left: 10px;
             h1{
                 font-size: 2em;
             }
+            
         }
         .panel_4{
             height: 100%;
@@ -95,11 +107,15 @@ $font-2: 'Archivo', sans-serif;
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
-            font-family: $font-2;
+            font-family: $font-4;
             color: $color3;
             padding-left: 10px;
             h1{
                 font-size: 2em;
+                font-weight: 300;
+            }
+            h4{
+                font-weight: 200;
             }
         }
     }
@@ -110,18 +126,18 @@ $font-2: 'Archivo', sans-serif;
             width: 100%;
             padding: 10px;
             p{
-                font-family: $font-2;
+                font-family: $font-5;
                 color: $color3;
-                font-size: 1.2em;                
+                font-size: 1.1em;                
             }
         }
         .info_2{            
             width: 100%;
             padding: 10px;            
             p{
-                font-family: $font-2;
+                font-family: $font-5;
                 color: $color3;
-                font-size: 1.2em;
+                font-size: 1.1em;
             }
         }
     }

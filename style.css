@@ -1,12 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@700;800&family=Source+Code+Pro:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap");
 #nav_container {
   width: 80%;
   left: 50%;
@@ -23,6 +36,8 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: fixed;
+  background-color: #3d3d3d;
+  opacity: 0.9999;
 }
 
 #nav_container #navbar {
@@ -38,9 +53,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-transition: .1s;
   transition: .1s;
 }
@@ -69,12 +84,11 @@
 }
 
 #nav_container #navbar ul li a {
-  text-transform: uppercase;
   position: relative;
   margin: 0 50px;
   text-decoration: none;
   color: #3d3d3d;
-  font-family: "Archivo", sans-serif;
+  font-family: "Source Code Pro", monospace;
   font-weight: 700;
   -webkit-transition: .6s;
   transition: .6s;
@@ -100,7 +114,7 @@
 }
 
 #footer p {
-  font-family: "Archivo", sans-serif;
+  font-family: "Source Code Pro", monospace;
   color: #E0E0E0;
   font-size: 0.9em;
 }
@@ -158,7 +172,7 @@ body::-webkit-scrollbar {
 }
 
 #presentacion .presentacion h1 {
-  font-family: "Archivo Black", sans-serif;
+  font-family: "Bebas Neue", cursive;
   text-transform: uppercase;
   color: #E0E0E0;
   font-size: 5em;
@@ -196,12 +210,13 @@ body::-webkit-scrollbar {
 }
 
 #banner_obras .obras_link a {
-  font-family: "Archivo Black", sans-serif;
+  font-family: "Bebas Neue", cursive;
   color: #3d3d3d;
   text-transform: uppercase;
   font-size: 3em;
   -webkit-transition: .6s;
   transition: .6s;
+  text-decoration: none;
 }
 
 #banner_obras .obras_link a:hover {
@@ -225,15 +240,14 @@ body::-webkit-scrollbar {
 }
 
 #obras .titulo h1 {
-  font-family: "Archivo Black", sans-serif;
+  font-family: "Bebas Neue", cursive;
   color: #E0E0E0;
   font-size: 3em;
   line-height: 1;
-  text-decoration: underline;
 }
 
 #obras p {
-  font-family: "Archivo", sans-serif;
+  font-family: "Work Sans", sans-serif;
   color: #E0E0E0;
   margin-bottom: 20px;
   padding-top: 10px;
@@ -305,7 +319,7 @@ body::-webkit-scrollbar {
 
 #obras .selector_obras .obra_1 .obra_1_link h1 {
   color: #F2922E;
-  font-family: "Archivo Black", sans-serif;
+  font-family: "Bebas Neue", cursive;
   font-size: 3em;
   line-height: 1;
 }
@@ -316,7 +330,7 @@ body::-webkit-scrollbar {
 
 #obras .selector_obras .obra_1 .obra_1_link a h2 {
   color: #F2922E;
-  font-family: "Archivo", sans-serif;
+  font-family: "Bebas Neue", cursive;
   line-height: 1;
   -webkit-transition: .6s;
   transition: .6s;
@@ -328,7 +342,7 @@ body::-webkit-scrollbar {
 
 #obras .selector_obras .obra_1 .obra_1_link h3 {
   color: #F2922E;
-  font-family: "Archivo", sans-serif;
+  font-family: "Bebas Neue", cursive;
   line-height: 1;
 }
 
@@ -385,7 +399,7 @@ body::-webkit-scrollbar {
 
 #obras .selector_obras .obra_2 .obra_2_link h1 {
   color: #F2922E;
-  font-family: "Archivo Black", sans-serif;
+  font-family: "Bebas Neue", cursive;
   font-size: 3em;
   line-height: 1;
 }
@@ -396,7 +410,7 @@ body::-webkit-scrollbar {
 
 #obras .selector_obras .obra_2 .obra_2_link a h2 {
   color: #F2922E;
-  font-family: "Archivo", sans-serif;
+  font-family: "Bebas Neue", cursive;
   line-height: 1;
   -webkit-transition: .6s;
   transition: .6s;
@@ -408,7 +422,7 @@ body::-webkit-scrollbar {
 
 #obras .selector_obras .obra_2 .obra_2_link h3 {
   color: #F2922E;
-  font-family: "Archivo", sans-serif;
+  font-family: "Bebas Neue", cursive;
   line-height: 1;
 }
 
@@ -429,11 +443,10 @@ body::-webkit-scrollbar {
 }
 
 #sense .titulo h1 {
-  font-family: "Archivo Black", sans-serif;
+  font-family: "Bebas Neue", cursive;
   color: #E0E0E0;
   font-size: 3em;
   line-height: 1;
-  text-decoration: underline;
 }
 
 #sense #slider_container {
@@ -469,7 +482,7 @@ body::-webkit-scrollbar {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: "Archivo", sans-serif;
+  font-family: "Work Sans", sans-serif;
   color: #3d3d3d;
   padding-left: 10px;
 }
@@ -495,13 +508,17 @@ body::-webkit-scrollbar {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: "Archivo", sans-serif;
+  font-family: "Work Sans", sans-serif;
   color: #E0E0E0;
   padding-left: 10px;
 }
 
 #sense #panel_info .panel_2 h1 {
   font-size: 2em;
+}
+
+#sense #panel_info .panel_2 h4 {
+  font-weight: 200;
 }
 
 #sense #panel_info .panel_3 {
@@ -521,7 +538,7 @@ body::-webkit-scrollbar {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: "Archivo", sans-serif;
+  font-family: "Work Sans", sans-serif;
   color: #3d3d3d;
   padding-left: 10px;
 }
@@ -547,13 +564,18 @@ body::-webkit-scrollbar {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: "Archivo", sans-serif;
+  font-family: "Work Sans", sans-serif;
   color: #E0E0E0;
   padding-left: 10px;
 }
 
 #sense #panel_info .panel_4 h1 {
   font-size: 2em;
+  font-weight: 300;
+}
+
+#sense #panel_info .panel_4 h4 {
+  font-weight: 200;
 }
 
 #sense #info_obra {
@@ -567,9 +589,9 @@ body::-webkit-scrollbar {
 }
 
 #sense #info_obra .info_1 p {
-  font-family: "Archivo", sans-serif;
+  font-family: "Source Code Pro", monospace;
   color: #E0E0E0;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 #sense #info_obra .info_2 {
@@ -578,8 +600,8 @@ body::-webkit-scrollbar {
 }
 
 #sense #info_obra .info_2 p {
-  font-family: "Archivo", sans-serif;
+  font-family: "Source Code Pro", monospace;
   color: #E0E0E0;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 /*# sourceMappingURL=style.css.map */

@@ -10,7 +10,15 @@ $font-1:'Archivo Black', sans-serif;
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&display=swap');
 $font-2: 'Archivo', sans-serif;
-//STYLES
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+$font-3: 'Bebas Neue', cursive;
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@700;800&family=Source+Code+Pro:wght@200&display=swap');
+$font-4: 'Big Shoulders Text', cursive;
+
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+$font-5: 'Odibee Sans', cursive;
 
 //GLOBAL
 *{
@@ -48,12 +56,13 @@ body{
         align-items: center;
         justify-content: flex-start;        
         h1{
-            font-family: $font-1;
+            font-family: $font-3;
             text-transform: uppercase;
             color: $color3;
             font-size: 5em;
             line-height: 1;
             padding-bottom: 150px;
+            // letter-spacing: 0.1em;
         }
     }
 }
@@ -72,11 +81,12 @@ body{
         align-items: center;
         justify-content: center;
         a{
-            font-family: $font-1;
+            font-family: $font-3;
             color: $color1;
             text-transform: uppercase;
             font-size: 3em;
             transition: .6s;
+            text-decoration: none;
             &:hover{
                 color: $color3;
             }
