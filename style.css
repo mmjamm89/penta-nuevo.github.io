@@ -34,7 +34,7 @@
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
-  min-height: 150px;
+  min-height: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,6 +47,11 @@
   position: fixed;
   background-color: #3d3d3d;
   opacity: 0.9999;
+}
+
+#nav_container svg {
+  padding: 0 20px 0 20px;
+  width: 120px;
 }
 
 #nav_container #navbar {
@@ -66,11 +71,6 @@
           justify-content: center;
   -webkit-transition: .1s;
   transition: .1s;
-}
-
-#nav_container #navbar svg {
-  padding: 0 20px 0 20px;
-  display: none;
 }
 
 #nav_container #navbar ul {
@@ -105,6 +105,24 @@
 
 #nav_container #navbar ul li a:hover {
   color: #F2922E;
+}
+
+@media screen and (max-width: 740px) {
+  #nav_container {
+    min-height: 75px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #nav_container svg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  #nav_container #navbar ul {
+    display: none;
+  }
 }
 
 #footer {
@@ -164,6 +182,10 @@ body::-webkit-scrollbar {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+#presentacion #logo_mobile .logo_mobile {
+  display: none;
 }
 
 #presentacion .presentacion {
@@ -230,6 +252,74 @@ body::-webkit-scrollbar {
 
 #banner_obras .obras_link a:hover {
   color: #E0E0E0;
+}
+
+@media screen and (max-width: 860px) {
+  #presentacion .presentacion h1 {
+    font-size: 4em;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  #main {
+    height: 600px;
+    padding: 0 5% 0 5%;
+  }
+  #presentacion {
+    height: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #presentacion #logo_mobile {
+    margin-top: 50px;
+    width: 100%;
+    height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #presentacion #logo_mobile .logo_mobile {
+    display: inline-block;
+    width: 250px;
+    z-index: 99;
+  }
+  #presentacion .presentacion {
+    min-height: 300px;
+    height: 300px;
+    padding-top: 50px;
+    width: 100%;
+  }
+  #presentacion .presentacion h1 {
+    font-size: 3em;
+    text-align: center;
+    padding-bottom: 0px;
+  }
+  #banner_obras {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+  }
 }
 
 #obras {
