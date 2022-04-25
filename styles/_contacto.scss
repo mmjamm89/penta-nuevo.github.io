@@ -20,7 +20,8 @@ $font-4: 'Bebas Neue', cursive;
 #contacto{
     width: 100%;
     padding: 0 10% 0 10%;
-    min-height: 864px;
+    min-height: 700px;
+    height: 100vh;
     .titulo{
         height: 220px;
         display: flex;
@@ -73,6 +74,161 @@ $font-4: 'Bebas Neue', cursive;
                 a{
                     i{
                         color: $color1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1750px) {
+    #contacto{
+        .titulo{
+            h1{
+            }
+        }
+        .contacto_boxes{
+            .mapa{
+                .mapouter{
+                    .gmap_canvas{
+                        iframe{
+                        }
+                    }
+                }
+            }
+            .datos_contacto{
+                font-size: 1.5em;
+                .redes_sociales{
+                    a{
+                        i{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    #contacto{
+        .titulo{
+            h1{
+            }
+        }
+        .contacto_boxes{
+            .mapa{
+                .mapouter{
+                    .gmap_canvas{
+                        iframe{
+                        }
+                    }
+                }
+            }
+            .datos_contacto{
+                font-size: 1em;
+                .redes_sociales{
+                    a{
+                        i{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    #contacto{
+        .titulo{
+            h1{
+            }
+        }
+        .contacto_boxes{
+            .mapa{
+                .mapouter{
+                    .gmap_canvas{
+                        iframe{
+                        }
+                    }
+                }
+            }
+            .datos_contacto{
+                font-size: .7em;
+                .redes_sociales{
+                    a{
+                        i{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 790px) {
+    #contacto{
+        .titulo{
+            h1{
+            }
+        }
+        .contacto_boxes{
+            .mapa{
+                display: none;
+                .mapouter{
+                    .gmap_canvas{
+                        iframe{
+                        }
+                    }
+                }
+            }
+            .datos_contacto{
+                width: 100%;
+                font-size: .8em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .redes_sociales{
+                    a{
+                        i{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #contacto{
+        .titulo{
+            h1{
+            }
+        }
+        .contacto_boxes{
+            .mapa{
+                display: none;
+                .mapouter{
+                    .gmap_canvas{
+                        iframe{
+                        }
+                    }
+                }
+            }
+            .datos_contacto{
+                width: 100%;
+                font-size: .6em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .redes_sociales{
+                    a{
+                        i{
+
+                        }
                     }
                 }
             }
