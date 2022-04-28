@@ -29,6 +29,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@700;800&family=Source+Code+Pro:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap");
 #nav_container {
   width: 100vw;
   padding: 0 20% 0 20%;
@@ -149,6 +155,8 @@
           justify-content: center;
   width: 100vw;
   height: 70px;
+  position: absolute;
+  bottom: 0;
 }
 
 #footer p {
@@ -176,15 +184,20 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.white_space {
+  height: 140px;
+  width: 100%;
+}
+
 #main {
   width: 100%;
   padding: 0 10% 0 10%;
-  min-height: 864px;
+  min-height: 700px;
 }
 
 #presentacion {
   width: 100%;
-  min-height: 740px;
+  min-height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,28 +352,26 @@ body::-webkit-scrollbar {
   min-height: 864px;
 }
 
+#obras .white_space {
+  width: 100%;
+  height: 140px;
+}
+
 #obras .titulo {
-  height: 220px;
+  height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #obras .titulo h1 {
   font-family: "Bebas Neue", cursive;
   color: #E0E0E0;
-  font-size: 3em;
+  font-size: 4em;
   line-height: 1;
-}
-
-#obras p {
-  font-family: "Work Sans", sans-serif;
-  color: #E0E0E0;
-  margin-bottom: 20px;
-  padding-top: 10px;
 }
 
 #obras .selector_obras {
@@ -378,6 +389,7 @@ body::-webkit-scrollbar {
 }
 
 #obras .selector_obras .obra_1 {
+  border-radius: 10px;
   height: 500px;
   width: 49%;
   background-image: url(assets/img1.jpeg);
@@ -536,27 +548,186 @@ body::-webkit-scrollbar {
   line-height: 1;
 }
 
-#contacto {
-  width: 100%;
-  padding: 0 10% 0 10%;
-  min-height: 700px;
-  height: 100vh;
-}
-
-#contacto .titulo {
-  height: 220px;
+#obras .obras_finalizadas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#obras .obras_finalizadas .titulo_obras {
+  height: 120px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#obras .obras_finalizadas .titulo_obras h1 {
+  text-transform: uppercase;
+  color: #E0E0E0;
+  font-family: "Bebas Neue", cursive;
+  font-size: 4em;
+  line-height: 1;
+}
+
+#obras .obras_finalizadas .obras_destacadas_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
+}
+
+#obras .obras_finalizadas .obras_destacadas_container .obras_destacadas {
+  border-radius: 10px;
+  background-color: #E0E0E0;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#obras .obras_finalizadas .obras_destacadas_container .obras_destacadas .obras_destacadas_titulo {
+  font-family: "Bebas Neue", cursive;
+  color: #3d3d3d;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+#obras .obras_finalizadas .obras_destacadas_container .obras_destacadas .obras_destacadas_desc {
+  color: black;
+  font-size: .9em;
+  padding: 0;
+  margin: 0;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#obras .obras_finalizadas .obras_destacadas_container .obras_destacadas .obras_destacadas_datos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#obras .obras_finalizadas .obras_destacadas_container .obras_destacadas .obras_destacadas_datos .datos_ubi {
+  font-family: "Bebas Neue", cursive;
+  color: #3d3d3d;
+  font-size: 1.4em;
+  letter-spacing: 1px;
+}
+
+#obras .obras_finalizadas .obras_destacadas_container .obras_destacadas .obras_destacadas_datos .datos_comi {
+  font-family: "Bebas Neue", cursive;
+  color: #3d3d3d;
+  font-size: 1.4em;
+  letter-spacing: 1px;
+}
+
+#obras .obras_finalizadas .obras_destacadas_container .obras_destacadas .obras_destacadas_datos .datos_sup {
+  font-family: "Bebas Neue", cursive;
+  color: #3d3d3d;
+  font-size: 1.4em;
+  letter-spacing: 1px;
+}
+
+#obras .obras_finalizadas .obras_destacadas_container .obras_destacadas .obras_destacadas_datos .obras_destacadas_link {
+  font-family: "Work Sans", sans-serif;
+  color: #3d3d3d;
+}
+
+#obras .obras_finalizadas .obras_destacadas_container .obras_destacadas .obras_destacadas_link {
+  color: #3d3d3d;
+}
+
+#obras .obras_finalizadas .obras_destacadas_container .obras_destacadas .obras_destacadas_link h1 {
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  color: #3d3d3d;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.3em;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(47, 45, 45, 0.42);
+          box-shadow: 0px 0px 5px 1px rgba(47, 45, 45, 0.42);
+}
+
+#contacto {
+  width: 100%;
+  padding: 0 10% 0 10%;
+  min-height: 850px;
+}
+
+#contacto .white_space {
+  width: 100%;
+  height: 140px;
+}
+
+#contacto .titulo {
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #contacto .titulo h1 {
   font-family: "Bebas Neue", cursive;
   color: #E0E0E0;
-  font-size: 3em;
+  font-size: 4em;
   line-height: 1;
 }
 
@@ -566,7 +737,6 @@ body::-webkit-scrollbar {
   display: flex;
   width: 100%;
   height: 450px;
-  margin-top: 40px;
 }
 
 #contacto .contacto_boxes .mapa {
@@ -1041,5 +1211,234 @@ body::-webkit-scrollbar {
   font-family: "Source Code Pro", monospace;
   color: #E0E0E0;
   font-size: 1.1em;
+}
+
+#page_container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content_wrap {
+  padding-top: 140px;
+  padding-bottom: 70px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#content_wrap .titulo {
+  width: 80%;
+  margin-top: 30px;
+}
+
+#content_wrap .titulo h1 {
+  text-transform: uppercase;
+  color: #E0E0E0;
+  font-family: "Bebas Neue", cursive;
+  font-size: 4em;
+}
+
+#content_wrap .titulo p {
+  color: #E0E0E0;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.3em;
+}
+
+#content_wrap .mision {
+  width: 80%;
+  margin-top: 30px;
+}
+
+#content_wrap .mision h1 {
+  text-transform: uppercase;
+  color: #E0E0E0;
+  font-family: "Bebas Neue", cursive;
+  font-size: 4em;
+}
+
+#content_wrap .mision p {
+  color: #E0E0E0;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.3em;
+}
+
+#content_wrap .valores {
+  width: 80%;
+  margin-top: 30px;
+}
+
+#content_wrap .valores h1 {
+  text-transform: uppercase;
+  color: #E0E0E0;
+  font-family: "Bebas Neue", cursive;
+  font-size: 4em;
+}
+
+#content_wrap .valores ul {
+  padding-left: 30px;
+}
+
+#content_wrap .valores ul li {
+  color: #E0E0E0;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.3em;
+}
+
+@media screen and (max-width: 950px) {
+  #content_wrap {
+    padding-top: 75px;
+    padding-bottom: 70px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #content_wrap {
+    padding-top: 75px;
+    padding-bottom: 70px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #content_wrap .titulo {
+    width: 80%;
+    margin-top: 30px;
+  }
+  #content_wrap .titulo h1 {
+    text-transform: uppercase;
+    color: #E0E0E0;
+    font-family: "Bebas Neue", cursive;
+    font-size: 4em;
+  }
+  #content_wrap .titulo p {
+    color: #E0E0E0;
+    font-family: "Source Code Pro", monospace;
+    font-size: 1.1em;
+  }
+  #content_wrap .mision {
+    width: 80%;
+    margin-top: 30px;
+  }
+  #content_wrap .mision h1 {
+    text-transform: uppercase;
+    color: #E0E0E0;
+    font-family: "Bebas Neue", cursive;
+    font-size: 4em;
+  }
+  #content_wrap .mision p {
+    color: #E0E0E0;
+    font-family: "Source Code Pro", monospace;
+    font-size: 1.1em;
+  }
+  #content_wrap .valores {
+    width: 80%;
+    margin-top: 30px;
+  }
+  #content_wrap .valores h1 {
+    text-transform: uppercase;
+    color: #E0E0E0;
+    font-family: "Bebas Neue", cursive;
+    font-size: 4em;
+  }
+  #content_wrap .valores ul {
+    padding-left: 30px;
+  }
+  #content_wrap .valores ul li {
+    color: #E0E0E0;
+    font-family: "Source Code Pro", monospace;
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #content_wrap {
+    padding-top: 75px;
+    padding-bottom: 70px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #content_wrap .titulo {
+    width: 80%;
+    margin-top: 30px;
+  }
+  #content_wrap .titulo h1 {
+    text-transform: uppercase;
+    color: #E0E0E0;
+    font-family: "Bebas Neue", cursive;
+    font-size: 2em;
+  }
+  #content_wrap .titulo p {
+    color: #E0E0E0;
+    font-family: "Source Code Pro", monospace;
+    font-size: .9em;
+  }
+  #content_wrap .mision {
+    width: 80%;
+    margin-top: 30px;
+  }
+  #content_wrap .mision h1 {
+    text-transform: uppercase;
+    color: #E0E0E0;
+    font-family: "Bebas Neue", cursive;
+    font-size: 2em;
+  }
+  #content_wrap .mision p {
+    color: #E0E0E0;
+    font-family: "Source Code Pro", monospace;
+    font-size: .9em;
+  }
+  #content_wrap .valores {
+    width: 80%;
+    margin-top: 30px;
+  }
+  #content_wrap .valores h1 {
+    text-transform: uppercase;
+    color: #E0E0E0;
+    font-family: "Bebas Neue", cursive;
+    font-size: 2em;
+  }
+  #content_wrap .valores ul {
+    padding-left: 30px;
+  }
+  #content_wrap .valores ul li {
+    color: #E0E0E0;
+    font-family: "Source Code Pro", monospace;
+    font-size: .9em;
+  }
 }
 /*# sourceMappingURL=style.css.map */

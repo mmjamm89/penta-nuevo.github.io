@@ -1,0 +1,226 @@
+//VARIABLES
+//COLORS
+$color1: #3d3d3d;
+$color2: #F2922E;
+$color3: #E0E0E0;
+
+//FONTS
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+$font-1:'Archivo Black', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&display=swap');
+$font-2: 'Archivo', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+$font-3: 'Bebas Neue', cursive;
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@700;800&family=Source+Code+Pro:wght@200&display=swap');
+$font-4: 'Big Shoulders Text', cursive;
+
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+$font-5: 'Odibee Sans', cursive;
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+$font-6: 'Source Code Pro', monospace;
+
+//GLOBAL
+
+#page_container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content_wrap {
+    padding-top: 140px;
+    padding-bottom: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .titulo {
+        width: 80%;        
+        margin-top: 30px;
+        h1 {
+            text-transform: uppercase;
+            color: $color3;
+            font-family: $font-3;
+            font-size: 4em;
+        }
+        p {
+            color: $color3;
+            font-family: $font-6;
+            font-size: 1.3em;
+        }
+    }
+
+    .mision {
+        width: 80%;        
+        margin-top: 30px;
+        h1 {
+            text-transform: uppercase;
+            color: $color3;
+            font-family: $font-3;
+            font-size: 4em;
+        }
+        p {
+            color: $color3;
+            font-family: $font-6;
+            font-size: 1.3em;
+        }
+    }
+
+    .valores {
+        width: 80%;        
+        margin-top: 30px;
+        h1 {
+            text-transform: uppercase;
+            color: $color3;
+            font-family: $font-3;
+            font-size: 4em;
+        }
+        ul {
+            padding-left: 30px;
+            li {
+                color: $color3;
+                font-family: $font-6;
+                font-size: 1.3em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #content_wrap {
+        padding-top: 75px;
+        padding-bottom: 70px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #content_wrap {
+        padding-top: 75px;
+        padding-bottom: 70px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        .titulo {
+            width: 80%;        
+            margin-top: 30px;
+            h1 {
+                text-transform: uppercase;
+                color: $color3;
+                font-family: $font-3;
+                font-size: 4em;
+            }
+            p {
+                color: $color3;
+                font-family: $font-6;
+                font-size: 1.1em;
+            }
+        }
+    
+        .mision {
+            width: 80%;        
+            margin-top: 30px;
+            h1 {
+                text-transform: uppercase;
+                color: $color3;
+                font-family: $font-3;
+                font-size: 4em;
+            }
+            p {
+                color: $color3;
+                font-family: $font-6;
+                font-size: 1.1em;
+            }
+        }
+    
+        .valores {
+            width: 80%;        
+            margin-top: 30px;
+            h1 {
+                text-transform: uppercase;
+                color: $color3;
+                font-family: $font-3;
+                font-size: 4em;
+            }
+            ul {
+                padding-left: 30px;
+                li {
+                    color: $color3;
+                    font-family: $font-6;
+                    font-size: 1.1em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #content_wrap {
+        padding-top: 75px;
+        padding-bottom: 70px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        .titulo {
+            width: 80%;        
+            margin-top: 30px;
+            h1 {
+                text-transform: uppercase;
+                color: $color3;
+                font-family: $font-3;
+                font-size: 2em;
+            }
+            p {
+                color: $color3;
+                font-family: $font-6;
+                font-size: .9em;
+            }
+        }
+    
+        .mision {
+            width: 80%;        
+            margin-top: 30px;
+            h1 {
+                text-transform: uppercase;
+                color: $color3;
+                font-family: $font-3;
+                font-size: 2em;
+            }
+            p {
+                color: $color3;
+                font-family: $font-6;
+                font-size: .9em;
+            }
+        }
+    
+        .valores {
+            width: 80%;        
+            margin-top: 30px;
+            h1 {
+                text-transform: uppercase;
+                color: $color3;
+                font-family: $font-3;
+                font-size: 2em;
+            }
+            ul {
+                padding-left: 30px;
+                li {
+                    color: $color3;
+                    font-family: $font-6;
+                    font-size: .9em;
+                }
+            }
+        }
+    }
+}

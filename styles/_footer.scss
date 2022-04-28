@@ -29,6 +29,8 @@ $font-5: 'Source Code Pro', monospace;
     justify-content: center;    
     width: 100vw;
     height: 70px;
+    position: absolute;
+    bottom: 0;
     p{
         font-family: $font-5;
         color: $color3;
